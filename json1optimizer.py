@@ -34,20 +34,20 @@ def merge_json_files(json1_data, json2_data):
 
 # Example usage:
 def main():
-    # Read the first JSON file
-    with open('json1.json', 'r') as f:
+    # Read the first JSON file with UTF-8 encoding
+    with open('json1.json', 'r', encoding='utf-8') as f:
         json1_data = json.load(f)
     
-    # Read the second JSON file
-    with open('json2.json', 'r') as f:
+    # Read the second JSON file with UTF-8 encoding
+    with open('json2.json', 'r', encoding='utf-8') as f:
         json2_data = json.load(f)
     
     # Merge the data
     merged_data = merge_json_files(json1_data, json2_data)
     
-    # Write the merged data to a new JSON file
-    with open('merged_output.json', 'w') as f:
-        json.dump(merged_data, f, indent=4)
+    # Write the merged data to a new JSON file with UTF-8 encoding
+    with open('merged_output.json', 'w', encoding='utf-8') as f:
+        json.dump(merged_data, f, indent=4, ensure_ascii=False)
 
 if __name__ == "__main__":
     main()
