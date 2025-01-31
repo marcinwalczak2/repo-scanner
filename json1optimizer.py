@@ -1,28 +1,53 @@
 import json
 
-# Load JSON files
-with open("json1.json", "r", encoding="utf-8") as f1:
-    json1 = json.load(f1)
+def merge_json_files(json1_data, json2_data):
+    # Create a lookup dictionary from json2 data
+    filename_lookup = {
+        item['filename']: {
+            'title': item['title'],
+            'name': item['name']
+        } for item in json2_data
+    }
+    
+    # Create new merged data structure
+    merged_data = {
+        "files": []
+    }
+    
+    # Iterate through json1 files
+    for file_entry in json1_data['files']:
+        # Get the HTML filename
+        html_file = file_entry['html_file']
+        
+        # Look for corresponding entry in json2
+        if html_file in filename_lookup:
+            # Create new entry with merged data
+            new_entry = {
+                'html_file': html_file,
+                'title': filename_lookup[html_file]['title'],
+                'name': filename_lookup[html_file]['name'],
+                'findings': file_entry['findings']
+            }
+            merged_data['files'].append(new_entry)
+    
+    return merged_data
 
-with open("json2.json", "r", encoding="utf-8") as f2:
-    json2 = json.load(f2)
+# Example usage:
+def main():
+    # Read the first JSON file
+    with open('json1.json', 'r') as f:
+        json1_data = json.load(f)
+    
+    # Read the second JSON file
+    with open('json2.json', 'r') as f:
+        json2_data = json.load(f)
+    
+    # Merge the data
+    merged_data = merge_json_files(json1_data, json2_data)
+    
+    # Write the merged data to a new JSON file
+    with open('merged_output.json', 'w') as f:
+        json.dump(merged_data, f, indent=4)
 
-# Convert json2 into a dictionary for quick lookup
-json2_dict = {entry["filename"]: {"title": entry["title"], "name": entry["name"]} for entry in json2}
-
-# Create the merged JSON structure
-merged_json = {"files": []}
-
-for file_entry in json1["files"]:
-    html_file = file_entry["html_file"]
-    if html_file in json2_dict:
-        # Merge data
-        file_entry["title"] = json2_dict[html_file]["title"]
-        file_entry["name"] = json2_dict[html_file]["name"]
-        merged_json["files"].append(file_entry)
-
-# Save the merged JSON
-with open("merged.json", "w", encoding="utf-8") as f_out:
-    json.dump(merged_json, f_out, indent=4, ensure_ascii=False)
-
-print("Merged JSON saved as merged.json")
+if __name__ == "__main__":
+    main()
