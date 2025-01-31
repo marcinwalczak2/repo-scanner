@@ -1,0 +1,12 @@
+<TocEntry Title="Augmented Reality" Link="/Content/Topics/AR/Overview.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="Virtual Reality" Link="/Content/Topics/VR/Overview.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="Edge Computing" Link="/Content/Topics/EdgeComputing/Overview.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="Wearable Technology" Link="/Content/Topics/WearableTech/Overview.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="Smart Homes" Link="/Content/Topics/SmartHomes/Overview.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="AI Ethics" Link="/Content/Topics/AI/Ethics.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="Robotics Process Automation" Link="/Content/Topics/RPA/Overview.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="Cloud Computing Services" Link="/Content/Topics/CloudComputing/Services.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="API Integration" Link="/Content/Topics/API/Integration.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="Software Development" Link="/Content/Topics/SoftwareDev/Overview.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="Agile Methodologies" Link="/Content/Topics/Agile/Methodologies.htm" BreakType="None" StartSection="false"/>
+<TocEntry Title="DevOps Practices" Link="/Content/Topics/DevOps/Practices.htm" BreakType="None" StartSection="false"/>

@@ -1,0 +1,307 @@
+{
+  "scan_date": "2025-01-31T01:28:57.404749",
+  "total_files_scanned": 5,
+  "files_with_findings": 5,
+  "findings": {
+    "Fundamentals.html": [
+      {
+        "term": "credit against tax liability",
+        "line_number": 9,
+        "line_content": "<h2>Credit Against Tax Liability Explained</h2>"
+      },
+      {
+        "term": "due to the fact that",
+        "line_number": 10,
+        "line_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Due to the fact that tax regulations change frequently, it is important that taxpayers stay informed. Through the use of proper documentation, taxpayers can ensure compliance.</p>"
+      },
+      {
+        "term": "due to the fact that",
+        "line_number": 10,
+        "line_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Due to the fact that tax regulations change frequently, it is important that taxpayers stay informed. Through the use of proper documentation, taxpayers can ensure compliance.</p>"
+      },
+      {
+        "term": "It is important that",
+        "line_number": 10,
+        "line_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Due to the fact that tax regulations change frequently, it is important that taxpayers stay informed. Through the use of proper documentation, taxpayers can ensure compliance.</p>"
+      },
+      {
+        "term": "the use of",
+        "line_number": 10,
+        "line_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Due to the fact that tax regulations change frequently, it is important that taxpayers stay informed. Through the use of proper documentation, taxpayers can ensure compliance.</p>"
+      },
+      {
+        "term": "through the use of",
+        "line_number": 10,
+        "line_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Due to the fact that tax regulations change frequently, it is important that taxpayers stay informed. Through the use of proper documentation, taxpayers can ensure compliance.</p>"
+      },
+      {
+        "term": "deduction from gross income",
+        "line_number": 12,
+        "line_content": "<p>In accordance with current regulations, a deduction from gross income may be available. Despite the fact that some restrictions apply, many taxpayers will be able to benefit from these provisions.</p>"
+      },
+      {
+        "term": "despite the fact that",
+        "line_number": 12,
+        "line_content": "<p>In accordance with current regulations, a deduction from gross income may be available. Despite the fact that some restrictions apply, many taxpayers will be able to benefit from these provisions.</p>"
+      },
+      {
+        "term": "in accordance with",
+        "line_number": 12,
+        "line_content": "<p>In accordance with current regulations, a deduction from gross income may be available. Despite the fact that some restrictions apply, many taxpayers will be able to benefit from these provisions.</p>"
+      },
+      {
+        "term": "will be able to",
+        "line_number": 12,
+        "line_content": "<p>In accordance with current regulations, a deduction from gross income may be available. Despite the fact that some restrictions apply, many taxpayers will be able to benefit from these provisions.</p>"
+      },
+      {
+        "term": "with regard to",
+        "line_number": 16,
+        "line_content": "<p>At this point in time, the Internal Revenue Code provides various options. With regard to specific deductions, taxpayers should consult Treasury Regulation \u00a7 1.163.</p>"
+      },
+      {
+        "term": "at this point in time",
+        "line_number": 16,
+        "line_content": "<p>At this point in time, the Internal Revenue Code provides various options. With regard to specific deductions, taxpayers should consult Treasury Regulation \u00a7 1.163.</p>"
+      },
+      {
+        "term": "Internal Revenue Code",
+        "line_number": 16,
+        "line_content": "<p>At this point in time, the Internal Revenue Code provides various options. With regard to specific deductions, taxpayers should consult Treasury Regulation \u00a7 1.163.</p>"
+      },
+      {
+        "term": "Regulation \u00a7",
+        "line_number": 16,
+        "line_content": "<p>At this point in time, the Internal Revenue Code provides various options. With regard to specific deductions, taxpayers should consult Treasury Regulation \u00a7 1.163.</p>"
+      },
+      {
+        "term": "Treasury Regulation \u00a7",
+        "line_number": 16,
+        "line_content": "<p>At this point in time, the Internal Revenue Code provides various options. With regard to specific deductions, taxpayers should consult Treasury Regulation \u00a7 1.163.</p>"
+      },
+      {
+        "term": "with regard to",
+        "line_number": 16,
+        "line_content": "<p>At this point in time, the Internal Revenue Code provides various options. With regard to specific deductions, taxpayers should consult Treasury Regulation \u00a7 1.163.</p>"
+      }
+    ],
+    "Methodologies.html": [
+      {
+        "term": "whether or not",
+        "line_number": 11,
+        "line_content": "<p>Whether or not you choose to invest, it is possible that market conditions will affect your returns. For the purpose of financial planning, we recommend gathering complete information.</p>"
+      },
+      {
+        "term": "for the purpose of",
+        "line_number": 11,
+        "line_content": "<p>Whether or not you choose to invest, it is possible that market conditions will affect your returns. For the purpose of financial planning, we recommend gathering complete information.</p>"
+      },
+      {
+        "term": "for the purpose of",
+        "line_number": 11,
+        "line_content": "<p>Whether or not you choose to invest, it is possible that market conditions will affect your returns. For the purpose of financial planning, we recommend gathering complete information.</p>"
+      },
+      {
+        "term": "it is possible that",
+        "line_number": 11,
+        "line_content": "<p>Whether or not you choose to invest, it is possible that market conditions will affect your returns. For the purpose of financial planning, we recommend gathering complete information.</p>"
+      },
+      {
+        "term": "whether or not",
+        "line_number": 11,
+        "line_content": "<p>Whether or not you choose to invest, it is possible that market conditions will affect your returns. For the purpose of financial planning, we recommend gathering complete information.</p>"
+      },
+      {
+        "term": "factor",
+        "line_number": 15,
+        "line_content": "<p>In order to make a decision about investments, you should look into various factors. As a means to achieve better returns, many investors have an understanding with their advisors.</p>"
+      },
+      {
+        "term": "as a means to",
+        "line_number": 15,
+        "line_content": "<p>In order to make a decision about investments, you should look into various factors. As a means to achieve better returns, many investors have an understanding with their advisors.</p>"
+      },
+      {
+        "term": "in order to",
+        "line_number": 15,
+        "line_content": "<p>In order to make a decision about investments, you should look into various factors. As a means to achieve better returns, many investors have an understanding with their advisors.</p>"
+      },
+      {
+        "term": "look into",
+        "line_number": 15,
+        "line_content": "<p>In order to make a decision about investments, you should look into various factors. As a means to achieve better returns, many investors have an understanding with their advisors.</p>"
+      },
+      {
+        "term": "make a decision",
+        "line_number": 15,
+        "line_content": "<p>In order to make a decision about investments, you should look into various factors. As a means to achieve better returns, many investors have an understanding with their advisors.</p>"
+      },
+      {
+        "term": "browse to",
+        "line_number": 18,
+        "line_content": "<p>At the present time, investors can browse to various resources. Each of these options has the ability to provide different benefits.</p>"
+      },
+      {
+        "term": "at the present time",
+        "line_number": 18,
+        "line_content": "<p>At the present time, investors can browse to various resources. Each of these options has the ability to provide different benefits.</p>"
+      },
+      {
+        "term": "each of",
+        "line_number": 18,
+        "line_content": "<p>At the present time, investors can browse to various resources. Each of these options has the ability to provide different benefits.</p>"
+      },
+      {
+        "term": "has the ability",
+        "line_number": 18,
+        "line_content": "<p>At the present time, investors can browse to various resources. Each of these options has the ability to provide different benefits.</p>"
+      }
+    ],
+    "Practices.html": [
+      {
+        "term": "to make an arrangement ",
+        "line_number": 8,
+        "line_content": "<p>To make an arrangement for leave, employees must follow proper procedures. By means of our online system, requests can be processed efficiently.</p>"
+      },
+      {
+        "term": "by means of",
+        "line_number": 8,
+        "line_content": "<p>To make an arrangement for leave, employees must follow proper procedures. By means of our online system, requests can be processed efficiently.</p>"
+      },
+      {
+        "term": "mutual agreement",
+        "line_number": 12,
+        "line_content": "<p>Every single one of our employees is required to complete training. Prior to implementing new procedures, we need to establish mutual agreement among stakeholders.</p>"
+      },
+      {
+        "term": "very",
+        "line_number": 12,
+        "line_content": "<p>Every single one of our employees is required to complete training. Prior to implementing new procedures, we need to establish mutual agreement among stakeholders.</p>"
+      },
+      {
+        "term": "every single one",
+        "line_number": 12,
+        "line_content": "<p>Every single one of our employees is required to complete training. Prior to implementing new procedures, we need to establish mutual agreement among stakeholders.</p>"
+      },
+      {
+        "term": "is required to",
+        "line_number": 12,
+        "line_content": "<p>Every single one of our employees is required to complete training. Prior to implementing new procedures, we need to establish mutual agreement among stakeholders.</p>"
+      },
+      {
+        "term": "prior to",
+        "line_number": 12,
+        "line_content": "<p>Every single one of our employees is required to complete training. Prior to implementing new procedures, we need to establish mutual agreement among stakeholders.</p>"
+      },
+      {
+        "term": "prior to",
+        "line_number": 12,
+        "line_content": "<p>Every single one of our employees is required to complete training. Prior to implementing new procedures, we need to establish mutual agreement among stakeholders.</p>"
+      },
+      {
+        "term": " type ",
+        "line_number": 14,
+        "line_content": "<p>The type of training required depends on your role. For the reason that safety is crucial, we must completely eliminate potential risks.</p>"
+      },
+      {
+        "term": "completely eliminate",
+        "line_number": 14,
+        "line_content": "<p>The type of training required depends on your role. For the reason that safety is crucial, we must completely eliminate potential risks.</p>"
+      },
+      {
+        "term": "for the reason that",
+        "line_number": 14,
+        "line_content": "<p>The type of training required depends on your role. For the reason that safety is crucial, we must completely eliminate potential risks.</p>"
+      },
+      {
+        "term": "the type of",
+        "line_number": 14,
+        "line_content": "<p>The type of training required depends on your role. For the reason that safety is crucial, we must completely eliminate potential risks.</p>"
+      }
+    ],
+    "htmlfolder\\AdvancedRobotics.html": [
+      {
+        "term": "extremely",
+        "line_number": 9,
+        "line_content": "<p>In an effort to maintain compliance, all procedures must be documented. Code section 7.1 outlines specific requirements that are extremely important.</p>"
+      },
+      {
+        "term": "Code section",
+        "line_number": 9,
+        "line_content": "<p>In an effort to maintain compliance, all procedures must be documented. Code section 7.1 outlines specific requirements that are extremely important.</p>"
+      },
+      {
+        "term": "in an effort to",
+        "line_number": 9,
+        "line_content": "<p>In an effort to maintain compliance, all procedures must be documented. Code section 7.1 outlines specific requirements that are extremely important.</p>"
+      },
+      {
+        "term": "as a whole",
+        "line_number": 13,
+        "line_content": "<p>As a whole, our policies aim to protect all parties. With the exception of special cases, standard procedures must be followed.</p>"
+      },
+      {
+        "term": "with the exception of",
+        "line_number": 13,
+        "line_content": "<p>As a whole, our policies aim to protect all parties. With the exception of special cases, standard procedures must be followed.</p>"
+      },
+      {
+        "term": "situation",
+        "line_number": 15,
+        "line_content": "<p>The situation requires careful attention to detail. In view of the fact that regulations change, regular updates are necessary.</p>"
+      },
+      {
+        "term": "in view of the fact that",
+        "line_number": 15,
+        "line_content": "<p>The situation requires careful attention to detail. In view of the fact that regulations change, regular updates are necessary.</p>"
+      }
+    ],
+    "htmlfolder\\Introduction.html": [
+      {
+        "term": "inadvertent error",
+        "line_number": 9,
+        "line_content": "<p>In the case of system failures, an inadvertent error may occur. Due to the effects of network congestion, response times may vary.</p>"
+      },
+      {
+        "term": "due to the effects",
+        "line_number": 9,
+        "line_content": "<p>In the case of system failures, an inadvertent error may occur. Due to the effects of network congestion, response times may vary.</p>"
+      },
+      {
+        "term": "in the case of",
+        "line_number": 9,
+        "line_content": "<p>In the case of system failures, an inadvertent error may occur. Due to the effects of network congestion, response times may vary.</p>"
+      },
+      {
+        "term": "to a certain extent",
+        "line_number": 13,
+        "line_content": "<p>The specific type of error will determine the response needed. To a certain extent, automated systems can handle these issues.</p>"
+      },
+      {
+        "term": "issue",
+        "line_number": 13,
+        "line_content": "<p>The specific type of error will determine the response needed. To a certain extent, automated systems can handle these issues.</p>"
+      },
+      {
+        "term": " type ",
+        "line_number": 13,
+        "line_content": "<p>The specific type of error will determine the response needed. To a certain extent, automated systems can handle these issues.</p>"
+      },
+      {
+        "term": "a considerable amount of",
+        "line_number": 15,
+        "line_content": "<p>A considerable amount of testing is required before deployment. In connection with these tests, we monitor various factors.</p>"
+      },
+      {
+        "term": "factor",
+        "line_number": 15,
+        "line_content": "<p>A considerable amount of testing is required before deployment. In connection with these tests, we monitor various factors.</p>"
+      },
+      {
+        "term": "in connection with",
+        "line_number": 15,
+        "line_content": "<p>A considerable amount of testing is required before deployment. In connection with these tests, we monitor various factors.</p>"
+      }
+    ]
+  }
+}

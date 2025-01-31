@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Introduction to AI",
+        "filename": "Introduction.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Advanced Robotics",
+        "filename": "AdvancedRobotics.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Data Science Basics",
+        "filename": "Basics.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Machine Learning Models",
+        "filename": "Models.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Deep Learning Applications",
+        "filename": "Applications.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Natural Language Processing",
+        "filename": "Overview.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Computer Vision Techniques",
+        "filename": "Techniques.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Big Data Analytics",
+        "filename": "Analytics.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Cybersecurity Fundamentals",
+        "filename": "Fundamentals.htm",
+        "name": "bob"
+    },
+    {
+        "title": "IoT Innovations",
+        "filename": "Innovations.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Quantum Computing",
+        "filename": "Overview.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Blockchain Technology",
+        "filename": "Technology.htm",
+        "name": "bob"
+    },
+    {
+        "title": "Autonomous Vehicles",
+        "filename": "Overview.htm",
+        "name": "bob"
+    }
+]
