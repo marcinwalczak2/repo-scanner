@@ -1,43 +1,22 @@
 import json
 
-# Define your file paths here
-JSON1_PATH = "path/to/json1.json"  # Replace with your json1 file path
-JSON2_PATH = "path/to/json2.json"  # Replace with your json2 file path
-OUTPUT_PATH = "merged_output.json"  # Replace with your desired output path
+# Load JSON1 and JSON2
+with open('json1.json', 'r') as f1:
+    json1 = json.load(f1)
 
-def merge_json_files():
-    # Load JSON files
-    try:
-        with open(JSON1_PATH, 'r') as f:
-            json1_data = json.load(f)
-        with open(JSON2_PATH, 'r') as f:
-            json2_data = json.load(f)
-    except FileNotFoundError as e:
-        print(f"Error: Could not find file - {e}")
-        return
-    except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON format - {e}")
-        return
+with open('json2.json', 'r') as f2:
+    json2 = json.load(f2)
 
-    # Create a lookup dictionary from json2 for faster matching
-    filename_lookup = {item['filename']: item for item in json2_data}
-    
-    # Update each file entry in json1 with matching data from json2
-    for file_entry in json1_data['files']:
-        # Get the corresponding entry from json2 using html_file as key
-        if file_entry['html_file'] in filename_lookup:
-            matching_entry = filename_lookup[file_entry['html_file']]
-            # Update title and name
-            file_entry['title'] = matching_entry['title']
-            file_entry['name'] = matching_entry['name']
-    
-    # Save the merged result
-    try:
-        with open(OUTPUT_PATH, 'w') as f:
-            json.dump(json1_data, f, indent=4)
-        print(f"Successfully merged files and saved to {OUTPUT_PATH}")
-    except Exception as e:
-        print(f"Error saving output file: {e}")
+# Create a mapping from filename (JSON2) to title and name
+filename_to_info = {item['filename']: item for item in json2}
 
-if __name__ == "__main__":
-    merge_json_files()
+# Update JSON1 with data from JSON2
+for file_entry in json1['files']:
+    html_file = file_entry['html_file']
+    if html_file in filename_to_info:
+        file_entry['title'] = filename_to_info[html_file]['title']
+        file_entry['name'] = filename_to_info[html_file]['name']
+
+# Save the merged result
+with open('merged_output.json', 'w') as outfile:
+    json.dump(json1, outfile, indent=4)
