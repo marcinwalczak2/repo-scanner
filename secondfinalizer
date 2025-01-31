@@ -8,14 +8,16 @@ with open('json2.json', 'r') as f2:
     json2 = json.load(f2)
 
 # Create a mapping from filename (JSON2) to title and name
-filename_to_info = {item['filename']: item for item in json2}
+filename_to_info = {item['filename'].lower(): item for item in json2}  # Case-insensitive matching
 
 # Update JSON1 with data from JSON2
 for file_entry in json1['files']:
-    html_file = file_entry['html_file']
+    html_file = file_entry['html_file'].lower()  # Case-insensitive matching
     if html_file in filename_to_info:
         file_entry['title'] = filename_to_info[html_file]['title']
         file_entry['name'] = filename_to_info[html_file]['name']
+    else:
+        print(f"Warning: No match found for file '{file_entry['html_file']}' in JSON2.")
 
 # Save the merged result
 with open('merged_output.json', 'w') as outfile:
