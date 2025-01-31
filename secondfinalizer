@@ -1,0 +1,22 @@
+import json
+
+# Load json1 and json2 from files
+with open("json1.json", "r", encoding="utf-8") as f:
+    json1 = json.load(f)
+
+with open("json2.json", "r", encoding="utf-8") as f:
+    json2 = json.load(f)
+
+# Create a lookup dictionary from json2 based on filename
+lookup = {entry["filename"]: {"title": entry["title"], "name": entry["name"]} for entry in json2}
+
+# Update json1 with title and name from json2
+for file_entry in json1["files"]:
+    if file_entry["html_file"] in lookup:
+        file_entry.update(lookup[file_entry["html_file"]])
+
+# Save the merged output to a new JSON file
+with open("merged.json", "w", encoding="utf-8") as f:
+    json.dump(json1, f, indent=4, ensure_ascii=False)
+
+print("Merged JSON file has been created: merged.json")
