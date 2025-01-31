@@ -1,22 +1,47 @@
 import json
+import sys
 
-# Load json1 and json2 from files
-with open("json1.json", "r", encoding="utf-8") as f:
-    json1 = json.load(f)
+def merge_json_files(json1_path, json2_path, output_path):
+    # Load JSON files
+    try:
+        with open(json1_path, 'r') as f:
+            json1_data = json.load(f)
+        with open(json2_path, 'r') as f:
+            json2_data = json.load(f)
+    except FileNotFoundError as e:
+        print(f"Error: Could not find file - {e}")
+        return
+    except json.JSONDecodeError as e:
+        print(f"Error: Invalid JSON format - {e}")
+        return
 
-with open("json2.json", "r", encoding="utf-8") as f:
-    json2 = json.load(f)
+    # Create a lookup dictionary from json2 for faster matching
+    filename_lookup = {item['filename']: item for item in json2_data}
+    
+    # Update each file entry in json1 with matching data from json2
+    for file_entry in json1_data['files']:
+        # Get the corresponding entry from json2 using html_file as key
+        if file_entry['html_file'] in filename_lookup:
+            matching_entry = filename_lookup[file_entry['html_file']]
+            # Update title and name
+            file_entry['title'] = matching_entry['title']
+            file_entry['name'] = matching_entry['name']
+    
+    # Save the merged result
+    try:
+        with open(output_path, 'w') as f:
+            json.dump(json1_data, f, indent=4)
+        print(f"Successfully merged files and saved to {output_path}")
+    except Exception as e:
+        print(f"Error saving output file: {e}")
 
-# Create a lookup dictionary from json2 based on filename
-lookup = {entry["filename"]: {"title": entry["title"], "name": entry["name"]} for entry in json2}
-
-# Update json1 with title and name from json2
-for file_entry in json1["files"]:
-    if file_entry["html_file"] in lookup:
-        file_entry.update(lookup[file_entry["html_file"]])
-
-# Save the merged output to a new JSON file
-with open("merged.json", "w", encoding="utf-8") as f:
-    json.dump(json1, f, indent=4, ensure_ascii=False)
-
-print("Merged JSON file has been created: merged.json")
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        print("Usage: python script.py <json1_path> <json2_path> <output_path>")
+        sys.exit(1)
+    
+    json1_path = sys.argv[1]
+    json2_path = sys.argv[2]
+    output_path = sys.argv[3]
+    
+    merge_json_files(json1_path, json2_path, output_path)
